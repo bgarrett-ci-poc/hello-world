@@ -3,6 +3,7 @@ pipeline {
     agent {
         kubernetes {
             yamlFile 'myAgent.yaml'
+            defaultContainer 'jenkins'
         }
     }
     stages {
